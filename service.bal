@@ -3,7 +3,7 @@ import ballerina/http;
 # A Ballerina service representing a network-accessible API
 # bound to port `9090`.
 
-service / on new http:Listener(9090) {
+service /greet on new http:Listener(9090) {
 
     # A resource for generating greetings
     # + name - the input string name
@@ -17,7 +17,7 @@ service / on new http:Listener(9090) {
     }
 }
 
-service /greet on new http:Listener(8080) {
+service /hello on new http:Listener(8080) {
 
     # A resource for generating greetings
     # + name - the input string name
